@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<pre id="kq"></pre>
+<script>
+    let i = 1;
+    const ds = [];
+    while (i <= 100) {
+        if (i % 15 === 0) {
+            ds.push("FizzBuzz");
+        } else if (i % 3 === 0) {
+            ds.push("Fizz");
+        } else if (i % 5 === 0) {
+            ds.push("Buzz");
+        } else {
+            ds.push(i);
+        }
+        i++;
+    }
+    document.getElementById("kq").textContent = ds.join(" ");
+</script>
+</body>
+</html>

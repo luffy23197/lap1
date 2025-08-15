@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<button onclick="kiemTraNhietDo()">Nhập nhiệt độ</button>
+<script>
+    function kiemTraNhietDo() {
+        const inp = prompt("Nhập nhiệt độ hiện tại (°C):");
+        const t = parseFloat(inp);
+        if (Number.isNaN(t)) {
+            alert("Vui lòng nhập một số hợp lệ.");
+            return;
+        }
+        if (t > 100) {
+            alert("Nhiệt độ quá cao, vui lòng giảm nhiệt độ.");
+        } else if (t < 20) {
+            alert("Nhiệt độ quá thấp, vui lòng tăng nhiệt độ.");
+        } else {
+            alert("Nhiệt độ bình thường.");
+        }
+    }
+</script>
+</body>
+</html>

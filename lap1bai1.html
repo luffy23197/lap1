@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lap1bai1</title>
+</head>
+<body>
+<button onclick="dem()">Đếm 1 → 100</button>
+<pre id="kq"></pre>
+<script>
+    function dem() {
+        let i = 1;
+        const kq = [];
+        while (i <= 100) {
+            kq.push(i);
+            if (i === 99) {
+                alert("Đã hoàn thành!");
+            }
+            i++;
+        }
+        document.getElementById("kq").textContent = kq.join(" ");
+    }
+</script>
+</body>
+</html>

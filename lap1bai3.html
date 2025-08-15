@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre id="kq"></pre>
+<script>
+    let a = 0, b = 1;
+    let ketQua;
+    while (true) {
+        if (a > 0 && a % 5 === 0) {
+            ketQua = a;
+            break;
+        }
+        const c = a + b; a = b; b = c;
+    }
+    document.getElementById('kq').textContent =
+        "Số dương đầu tiên trong Fibonacci chia hết cho 5 là: " + ketQua +
+        "\n(Nếu tính cả 0 thì là 0)";
+</script>
+</body>
+</html>

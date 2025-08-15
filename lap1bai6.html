@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body>
+<pre id="kq"></pre>
+<script>
+    let i = 1;
+    let tong = 0;
+    const ds = [];
+    while (i <= 30) {
+        const x = 7 * i;
+        ds.push(x);
+        tong += x;
+        i++;
+    }
+    document.getElementById('kq').textContent =
+        "30 số đầu tiên chia hết cho 7: " + ds.join(" ") + "\n" +
+        "Tổng = " + tong;
+</script>
+</body>
+</html>
